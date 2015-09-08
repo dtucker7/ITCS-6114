@@ -5,7 +5,7 @@ for class in ${arrClass[*]}
 do
     for i in ${arrInt[*]}
     do
-        for r in `seq 0 29`
+        for r in `seq 0 99`
         do
             echo -n "$class $i " >> log
             java $class instance $i 2>> log
