@@ -3,7 +3,7 @@ arrClass=(ArgMin ArgMax ArgSort)
 
 for class in ${arrClass[*]}
 do
-    for i in ${arrInt[*]}
+    for i in `seq 100 500000 10000000` # ${arrInt[*]}
     do
         for r in `seq 0 99`
         do
