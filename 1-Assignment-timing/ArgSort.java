@@ -7,6 +7,7 @@ public class ArgSort {
         int n = Integer.parseInt(args[1]);
         int[] intArray = new int[n];
 
+        // Initialize intArray prior to timed process
         try {
             BufferedReader fi = new BufferedReader(new FileReader(fileInput));
             String line;
@@ -22,6 +23,7 @@ public class ArgSort {
             ioe.printStackTrace();
         }
 
+        // Timing execution of sort process (t1 - t0)
         long t0 = System.nanoTime();
         Arrays.sort(intArray);
         long t1 = System.nanoTime();

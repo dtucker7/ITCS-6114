@@ -6,6 +6,7 @@ public class ArgMin {
         int n = Integer.parseInt(args[1]);
         int[] intArray = new int[n];
 
+        // Initialize intArray prior to timed process
         try {
             BufferedReader fi = new BufferedReader(new FileReader(fileInput));
             String line;
@@ -21,6 +22,7 @@ public class ArgMin {
             ioe.printStackTrace();
         }
 
+        // Timing execution of min process (t1 - t0)
         long t0 = System.nanoTime();
         int argMin = intArray[0];
         for (int j = 1; j < n; j += 1) {
